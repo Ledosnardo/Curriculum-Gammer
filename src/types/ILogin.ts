@@ -1,3 +1,4 @@
 export interface ILogin{
-    name: string | undefined
+    name: String | undefined
+    imageProfile: String
 }

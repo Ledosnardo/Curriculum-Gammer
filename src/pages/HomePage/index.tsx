@@ -1,12 +1,13 @@
 import { useRecoilValue } from "recoil"
-import { LoginStatus } from "state/atom";
+import { Games } from "state/atom";
+import HomePageHeader from "./Header";
 
 const HomePage = () => {
+    const games = useRecoilValue(Games);
 
-    const loginName = useRecoilValue(LoginStatus);
 
     return(
-        <div>{loginName.name}</div>
+        <HomePageHeader />
     )
 }
 
