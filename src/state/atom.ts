@@ -19,6 +19,8 @@ export const Games = atom<IGames[]>({
         name: game.name,
         rating: game.rating,
         image: game.background_image,
-        clip: game.clip.clip
+        clip: game.clip.clip,
+        screenShots: game.short_screenshots,
+        genres: game.genres
     }})
 })

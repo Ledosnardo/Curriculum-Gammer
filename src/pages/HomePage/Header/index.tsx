@@ -1,5 +1,5 @@
 import { UseGameSweepstakes } from "state/hooks/UseSweepstakes";
-import { Header,Title, Div } from "./style";
+import { Header, Div } from "./style";
 import HeaderDefault from "components/Header";
 
 const HomePageHeader = () => {
@@ -10,7 +10,6 @@ const HomePageHeader = () => {
             <Div>
                 <HeaderDefault />
             </Div>
-            <Title>{game[0]?.name}</Title>
         </Header>
     )
 }
