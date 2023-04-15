@@ -48,7 +48,7 @@ export const SectionRight = styled.div`
     width: 40%;
 
     h3{
-        color: #1a97ff;
+        color: #790000;
         font-size: .8em;
         font-weight: 400;
         text-transform: uppercase;
@@ -72,7 +72,7 @@ export const InputName = styled.div`
     margin-bottom: 20px ;
 
     label{
-        color: #1a97ff;
+        color: #790000;
         font-size: .8em;
         font-weight: 400;
     }
@@ -114,7 +114,7 @@ export const Button = styled.button`
     width: 60%;
     margin: 40px 20%;
     padding: 15px;
-    background: linear-gradient(34deg, rgba(7,190,255,1) 0%, rgba(30,145,255,1) 46%, rgba(44,117,255,1) 100%);
+    background: linear-gradient(34deg, rgba(252,34,34,1) 0%, rgba(233,0,0,1) 46%, rgba(149,0,0,1) 100%, rgba(25,40,62,1) 152230%);   
     border: none;
     border-radius: 2px;
     color: white;

@@ -5,8 +5,23 @@ export const CarouselStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
-    background: linear-gradient(34deg, rgba(62,99,141,1) 0%, rgba(55,95,145,1) 46%, rgba(15,33,109,1) 100%);
+    padding: 50px 0;
+    background: linear-gradient(34deg, rgba(252,34,34,1) 0%, rgba(233,0,0,1) 46%, rgba(149,0,0,1) 100%, rgba(25,40,62,1) 152230%);    
+    
+    h2{
+        margin: 20px 0;
+        color: white;
+        font-size: 1.4em;
+        letter-spacing: 1px;
+    }
+`;
+
+export const CardGamesStyles = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 70px 0;
 
     h2{
         margin: 20px 0;

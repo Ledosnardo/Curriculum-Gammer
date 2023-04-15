@@ -18,6 +18,6 @@ export const Div = styled.div`
     }
 
     .icon:hover{
-        color: #1a97ff;
+        color: rgba(255, 0, 0, 1);
     }
 `;

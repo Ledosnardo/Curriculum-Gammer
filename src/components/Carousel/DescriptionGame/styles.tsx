@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from './background-texture.jpg';
+import background from './background-texture-red.jpg';
 
 export const MainDescription = styled.div`
     background: url(${background});  
@@ -33,21 +33,3 @@ export const MainDescription = styled.div`
 
 `;
 
-export const Genres = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    div{
-        padding: 0px 10px;
-        margin: 20px 20px;
-        width: auto;
-        height: auto;
-        background: #394149;
-        border-radius: 2px;
-    }
-
-    h3{
-        padding: 2px;
-    }
-`;

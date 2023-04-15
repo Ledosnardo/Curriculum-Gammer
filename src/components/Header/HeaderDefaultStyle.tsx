@@ -5,8 +5,9 @@ export const Nav = styled.nav`
     align-items: center;
     justify-content: space-between;
     width: 50%;
-    background: linear-gradient(34deg, rgba(62,99,141,1) 0%, rgba(55,95,145,1) 46%, rgba(15,33,109,1) 100%);
+    background: linear-gradient(34deg, rgba(252,34,34,1) 0%, rgba(233,0,0,1) 46%, rgba(149,0,0,1) 100%, rgba(25,40,62,1) 152230%);    // background: linear-gradient(34deg, rgba(62,99,141,1) 0%, rgba(55,95,145,1) 46%, rgba(15,33,109,1) 100%);
     margin: 20px;
+    border-radius: 2px;
 `;
 
 export const Div = styled.div`
@@ -25,10 +26,11 @@ export const Div = styled.div`
 export const Profile = styled.div`
     display: flex;
     align-items: center;
-    background: rgba(73, 165, 184, .2);
+    // background: rgba(73, 165, 184, .2);
+    background: rgba(0,0,0, .8);
     
     h3{
-        color: rgba(73, 165, 184, 1);
+        color: rgba(255, 0, 0, 1);
         margin-left: 10px;
         padding: 0 10px;
         font-weight: bold;
@@ -38,7 +40,8 @@ export const Profile = styled.div`
 export const Img = styled.img`
     width: 28px;
     height: 28px;
-    border-right: 3px solid rgba(73, 165, 184, 1);
+    // border-right: 3px solid rgba(73, 165, 184, 1);
+    border-right: 3px solid #950000;
 `;
 
 export const DivInput = styled.div`
@@ -46,8 +49,8 @@ export const DivInput = styled.div`
     width: 30%;
     display: flex;
     align-items: center;
-    background: #316282;
-    border: 1px solid #316282;
+    background: rgba(0,0,0, .8);
+    border: 1px solid rgba(0,0,0, .6);
     border-radius: 3px;
 
     span{
@@ -69,7 +72,7 @@ export const Input = styled.input`
 
     ::placeholder{
         padding: 20px;
-        color: rgba(0, 0, 0, .7);
+        color: #c5c3c0;
         font-size: 1.2em;
     }
 

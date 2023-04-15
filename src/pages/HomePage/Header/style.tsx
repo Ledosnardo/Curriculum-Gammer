@@ -5,6 +5,7 @@ export const Header = styled.header`
     position: relative;
     min-width: 100%;
     height: 70vh;
+    box-shadow: 0 0 20px 6px black;
 `;
 
 export const Div = styled.div`

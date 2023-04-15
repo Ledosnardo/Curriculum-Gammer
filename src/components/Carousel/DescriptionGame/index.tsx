@@ -1,5 +1,6 @@
 import IGames from "types/IGames";
-import { MainDescription, Genres } from "./styles";
+import { MainDescription } from "./styles";
+import GenresGames from "components/GenresGames";
 
 interface props{
     games: IGames[]
@@ -7,7 +8,6 @@ interface props{
 }
 
 const DescriptionGame = ({games, carouselGame}: props) => {
-    const genresGame = games.find((game, index) => index === carouselGame)
 
     return(
         <MainDescription>
@@ -19,15 +19,7 @@ const DescriptionGame = ({games, carouselGame}: props) => {
                 <img src={`${games[carouselGame]?.screenShots[4].image}`} />
             </div>
             <div>
-                <Genres>
-                    {genresGame?.genres.map(genre => {
-                        return(
-                            <div>
-                                <h3>{genre.name}</h3>
-                            </div>
-                        )
-                    })}
-                </Genres>
+                <GenresGames games={games} carouselGame={carouselGame}/>
                 <h3>Raiting: {games[carouselGame]?.rating}</h3>
             </div>
         </MainDescription>

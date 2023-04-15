@@ -1,21 +1,23 @@
-import { useRecoilValue } from "recoil"
-import { Games } from "state/atom";
 import HomePageHeader from "./Header";
 import Carousel from "components/Carousel";
-import { CarouselStyle } from "./style";
+import { CarouselStyle, CardGamesStyles } from "./style";
 import FooterPage from "components/Footer";
+import CardGames from "components/CardGames";
+import GameList from "components/GameList";
 
 const HomePage = () => {
-    const games = useRecoilValue(Games);
-
-
     return(
         <>
             <HomePageHeader />
             <CarouselStyle>
                 <h2>Destaques e recomendados</h2>
-                <Carousel />
+                <Carousel/>
             </CarouselStyle>
+            <CardGamesStyles>
+                <h2>Games</h2>
+                <CardGames/>
+            </CardGamesStyles>
+            <GameList />
             <FooterPage />
         </>
     )
