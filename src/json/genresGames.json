@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Action",
+        "slug": "action"
+    },
+    {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+    },
+    {
+        "id": 3,
+        "name": "Puzzle",
+        "slug": "puzzle"
+    },
+    {
+        "id": 4,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+    },
+    {
+        "id": 5,
+        "name": "Adventure",
+        "slug": "adventure"
+    },
+    {
+        "id": 6,
+        "name": "Indie",
+        "slug": "indie"
+    },
+    {
+        "id": 7,
+        "name": "Platformer",
+        "slug": "platformer"
+    }
+]

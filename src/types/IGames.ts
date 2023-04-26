@@ -11,7 +11,7 @@ export default interface IGames{
     genres: {
         id: number
         name: String
-        slug: String
+        slug: string
         games_count: number
         image_background: String
     }[]

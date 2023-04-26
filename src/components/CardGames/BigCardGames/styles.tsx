@@ -17,6 +17,7 @@ export const Div = styled.div`
         font-size: 2.5em;
         text-shadow: 0 0 4px white;
         font-family: 'Sedgwick Ave Display', cursive;
+        padding: 12px;
     }
 `;
 

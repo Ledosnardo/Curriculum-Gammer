@@ -26,6 +26,10 @@ const Carousel = () => {
             return setCarouselGame(carouselGame + 1)
         }
     }
+    
+    setInterval(() => {
+        changeGameNext()
+    }, 20000)
 
     return(
         <>
@@ -33,7 +37,7 @@ const Carousel = () => {
                 <ButtonPass onClick={() => changeGamePrev()}><span><SlArrowLeft size={50}/></span></ButtonPass>
                 <Div>
                     <Content>
-                        <MainPhoto style={{background: `url(${games[carouselGame]?.image}) no-repeat center`}}></MainPhoto>
+                        <MainPhoto style={{background: `url(${games[carouselGame]?.image}) no-repeat center / cover`}}></MainPhoto>
                         <DescriptionGame games={games} carouselGame={carouselGame}/>
                     </Content>
                 </Div>

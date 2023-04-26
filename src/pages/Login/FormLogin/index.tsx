@@ -2,13 +2,13 @@ import { SectionLeft, SectionRight, Div, Form, InputName, InputPassWord, Title, 
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import qrCode from './qr-code.png';
-import UseAddLogin from 'state/hooks/UseAddLogin';
+import { UseAddUser } from 'state/hooks/UseUser';
 
 const FormLogin = () => {
 
     const [ name, setName ] = useState<string>('');
     const navigate = useNavigate();
-    const addLogin = UseAddLogin();
+    const addLogin = UseAddUser();
 
     const submitForm = (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();

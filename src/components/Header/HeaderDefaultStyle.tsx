@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Header = styled.header`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`; 
+
 export const Nav = styled.nav`
     display: flex;
     align-items: center;
@@ -45,8 +52,7 @@ export const Img = styled.img`
 `;
 
 export const DivInput = styled.div`
-    margin: 0 15px;
-    width: 30%;
+    width: 85%;
     display: flex;
     align-items: center;
     background: rgba(0,0,0, .8);
@@ -69,6 +75,7 @@ export const Input = styled.input`
     display: block;
     padding: 10px;
     font-size: 1em;
+    color: #c5c3c0;
 
     ::placeholder{
         padding: 20px;
@@ -82,5 +89,29 @@ export const Input = styled.input`
 
     ::-webkit-search-cancel-button{
         display: none;
+    }
+`;
+
+export const DivSearch = styled.div`
+    position: absolute;
+    background: rgba(0,0,0, .8);
+    padding: 5px;
+    margin-top: 2px;
+    width: 30%;
+    z-index: 105;
+
+    div{
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8px;
+        padding: 10px;
+        border-top: 1px solid #c5c3c0;
+    }
+
+    img{
+        width: 60%;
+        max-height: 70px;
     }
 `;

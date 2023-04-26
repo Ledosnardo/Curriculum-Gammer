@@ -8,7 +8,3 @@ export const Header = styled.header`
     box-shadow: 0 0 20px 6px black;
 `;
 
-export const Div = styled.div`
-    display: flex;
-    justify-content: center;
-`;

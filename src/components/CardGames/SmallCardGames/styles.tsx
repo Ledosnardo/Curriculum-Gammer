@@ -11,7 +11,7 @@ export const Div = styled.div`
     h2{
         text-align: center;
         margin: 0;
-        padding: 10px 20px 0 0;
+        padding: 12px 0;
         font-size: 1.8em;
         text-shadow: 0 0 4px white;
         font-family: 'Sedgwick Ave Display', cursive;
