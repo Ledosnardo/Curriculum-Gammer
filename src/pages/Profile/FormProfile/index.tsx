@@ -2,6 +2,8 @@ import { useRecoilValue } from "recoil";
 import { useState } from 'react';
 import { Usuario } from "state/atom";
 import { UseUpdateProfile } from "state/hooks/UseUser";
+import { ButtonDiv, Form, ImageProfile, NickProfile } from "./FormProfileStyle";
+import { Input } from "./FormProfileStyle";
 
 
 const FormProfile = () => {
@@ -18,16 +20,25 @@ const FormProfile = () => {
     }
 
     return(
-        <form onSubmit={(e) => submitUptade(e)}>
-            <div>
-                <img src={user.imageProfile} alt='Image profile'/>
-                <input type='url' value={imageProfile} onChange={(e) => setimageProfile(e.target.value)}/>
-            </div>
-            <div>
-                <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
-            </div>
-            <button>Salvar</button>
-        </form>
+        <Form onSubmit={(e) => submitUptade(e)}>
+            <ImageProfile>
+                <div className="image">
+                    <img src={user.imageProfile} alt='Image profile'/>  
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <Input type='url' value={imageProfile} onChange={(e) => setimageProfile(e.target.value)}/>
+            </ImageProfile>
+            <NickProfile>
+                <label htmlFor="nickName">Seu nick:</label>
+                <Input id='nickName'type="text" value={name} onChange={(e) => setName(e.target.value)}/>
+            </NickProfile>
+            <ButtonDiv>
+                <button>Salvar</button>
+            </ButtonDiv>
+        </Form>
     )
 
 }
