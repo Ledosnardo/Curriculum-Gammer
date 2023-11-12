@@ -1,20 +1,21 @@
 import IGames from "types/IGames";
 import { Genres } from "./styles";
+import SmallBox from "components/SmallBox";
 
 interface props{
-    games: IGames[]
+    games: IGames[] | IGames | undefined
     carouselGame?: number
 }
 
 const GenresGames = ({ games, carouselGame = 0 }: props) => {
-    const genresGame = games.find((game, index) => index === carouselGame)
+    const genresGame = Array.isArray(games) ? games.find((game, index) => index === carouselGame) : games
 
     return (
     <Genres>
         {genresGame?.genres.map((genre, index) => {
             return(
                 <div key={index}>
-                    <h3>{genre.name}</h3>
+                    <SmallBox content={ genre?.name }/>
                 </div>
             )
         })}

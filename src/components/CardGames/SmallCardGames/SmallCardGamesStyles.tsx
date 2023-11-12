@@ -2,7 +2,7 @@ import styled from "styled-components";
 import backgroundRed from '../background-texture-light-red.jpg';
 
 export const Div = styled.div`
-    width: 100%;
+    min-width: 400px;
     height: 49%;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@ export const DivText = styled.div`
 `;
 
 export const BackgroundImage = styled.div`
+    cursor: pointer;
     width: 100%;
     height: 100%;
 `;

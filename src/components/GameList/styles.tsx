@@ -34,7 +34,7 @@ export const Div = styled.div`
 export const Container = styled.div`
     width: 90%;
     background: #171a21;
-    height: auto;
+    height: 100vh;
     margin: 16px;
     display: flex;
     flex-direction: column;
@@ -42,6 +42,11 @@ export const Container = styled.div`
     border: 5px solid #171a21;
     border-radius: 2px;
     box-shadow: 0 0 10px black;
+    overflow: hidden;
+
+    .link{
+        textDecoration: none;
+    }
 `;
 export const DivBackground = styled.div`
     width: 100%;
@@ -56,6 +61,7 @@ export const DivDescription = styled.div`
     flex-direction: column;
     padding: 0 20px;
     overflow: hidden;
+    color: #c5c3c0;
 
     .name{
         font-size: 1.8em;

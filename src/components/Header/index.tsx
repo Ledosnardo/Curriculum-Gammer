@@ -29,16 +29,23 @@ const HeaderDefault = () => {
                 <DivInput>
                     <Input type='search' placeholder="Search" 
                         value={filterSearch} onChange={(e) => setFilterSearch(e.target.value)}
+                        onBlur={() => {
+                            setTimeout(() => {
+                                setFilterSearch('')
+                            }, 100)
+                        }}
                     />
                     <span><BiSearchAlt/></span>
                 </DivInput>
                 <DivSearch style={{ display: games?.length == undefined ?  'none' : 'block' }}>
                     {games?.map(game => {
                         return(
-                            <div key={game.id}>
-                                <h1>{game.name}</h1>
-                                <img src={`${game.image}`} alt="gameImage" />
-                            </div>
+                            <Link to={`/games/${game.slug}`}  key={game.id}>
+                                <div>
+                                    <h1>{game.name}</h1>
+                                    <img src={`${game.image}`} alt="gameImage" />
+                                </div>
+                            </Link>
                         )
                     })}
                 </DivSearch>

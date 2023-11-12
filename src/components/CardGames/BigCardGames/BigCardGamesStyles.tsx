@@ -22,6 +22,7 @@ export const Div = styled.div`
 `;
 
 export const BackgroundImage = styled.div`
+    cursor: pointer;
     width: 100%;
     height: 100%;
 `;

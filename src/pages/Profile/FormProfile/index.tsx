@@ -21,20 +21,22 @@ const FormProfile = () => {
 
     return(
         <Form onSubmit={(e) => submitUptade(e)}>
-            <ImageProfile>
-                <div className="image">
-                    <img src={user.imageProfile} alt='Image profile'/>  
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <Input type='url' value={imageProfile} onChange={(e) => setimageProfile(e.target.value)}/>
-            </ImageProfile>
-            <NickProfile>
-                <label htmlFor="nickName">Seu nick:</label>
-                <Input id='nickName'type="text" value={name} onChange={(e) => setName(e.target.value)}/>
-            </NickProfile>
+            <div className="content">
+                <ImageProfile>
+                    <div className="image">
+                        <img src={user.imageProfile} alt='Image profile'/>  
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <Input type='url' value={imageProfile} onChange={(e) => setimageProfile(e.target.value)}/>
+                </ImageProfile>
+                <NickProfile>
+                    <label htmlFor="nickName">Seu nick:</label>
+                    <Input id='nickName'type="text" value={name} onChange={(e) => setName(e.target.value)}/>
+                </NickProfile>
+            </div>
             <ButtonDiv>
                 <button>Salvar</button>
             </ButtonDiv>

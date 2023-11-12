@@ -1,18 +1,20 @@
 export default interface IGames{
     id: number
-    name: String
+    name: string
+    slug: string
     rating: number
-    image: String
-    clip: String
+    image: string
+    clip: string
+    released:string
     screenShots: {
         id: number
-        image: String
+        image: string
     }[]
     genres: {
         id: number
-        name: String
+        name: string
         slug: string
         games_count: number
-        image_background: String
+        image_background: string
     }[]
 }[]

@@ -108,6 +108,7 @@ export const DivSearch = styled.div`
         margin: 8px;
         padding: 10px;
         border-top: 1px solid #c5c3c0;
+        color: #c5c3c0;
     }
 
     img{

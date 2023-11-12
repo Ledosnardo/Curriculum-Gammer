@@ -4,7 +4,7 @@ export const Main = styled.main`
     display: flex;
     align-items: center;
     width: 80%;
-    height: 60vh;
+    height: 70vh;
     margin-bottom: 10px;
 `;
 

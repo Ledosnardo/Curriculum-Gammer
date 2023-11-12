@@ -1,12 +1,11 @@
-import IGames from "types/IGames";
 import BigCardGames from "./BigCardGames";
-import { UseGameSweepstakes } from "state/hooks/UseSweepstakes";
-import { DivCards } from "./styles";
 import SmallCardGames from "./SmallCardGames";
 
-const CardGames = () => {
-    const games:IGames[] = UseGameSweepstakes(4);
+import { DivCards } from "./styles";
+import { GamesCardGames } from "state/hooks/UseGamesPage";
 
+const CardGames = () => {
+    const games = GamesCardGames();
 
     return(
         <DivCards>

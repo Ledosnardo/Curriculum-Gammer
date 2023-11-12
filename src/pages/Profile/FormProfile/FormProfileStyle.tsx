@@ -6,7 +6,16 @@ export const Form = styled.form`
     display: flex;
     justify-content: center;
     align-items: end;
-    padding: 60px 0;
+
+    .content{
+        background: linear-gradient(34deg, rgba(252,34,34,1) 0%, rgba(233,0,0,1) 46%, rgba(149,0,0,1) 100%, rgba(25,40,62,1) 152230%);    // background: linear-gradient(34deg, rgba(62,99,141,1) 0%, rgba(55,95,145,1) 46%, rgba(15,33,109,1) 100%);
+        display: flex;
+        align-items: end;
+        padding: 20px;
+        border-radius: 8px;
+        height: 85%;
+        box-shadow: 0 0 4px 1px black;
+    }
 `;
 
 export const ImageProfile = styled.div`
@@ -109,7 +118,7 @@ export const Input = styled.input`
     width: 100%;
     padding: 12px;
     border: 1px solid rgba(0,0,0, .6);
-    background: rgba(255, 0, 0, .6);
+    background: rgba(0,0,0, .8);
     text-align: center;
     font-size: 1em;
     color: #c5c3c0;
@@ -122,7 +131,7 @@ export const Input = styled.input`
 `;
 
 export const NickProfile = styled.div`
-    width: 15%;
+    width: 20%;
     height: 100%;
     margin: 0 50px;
     display: flex;
@@ -151,7 +160,7 @@ export const ButtonDiv = styled.div`
     }
 
     button:hover{
-        background: rgba(255, 0, 0, .6);
+        background: linear-gradient(34deg, rgba(252,34,34,1) 0%, rgba(233,0,0,1) 46%, rgba(149,0,0,1) 100%, rgba(25,40,62,1) 152230%);    // background: linear-gradient(34deg, rgba(62,99,141,1) 0%, rgba(55,95,145,1) 46%, rgba(15,33,109,1) 100%);
         box-shadow: 0 0 4px 1px black;
     }
 `;
